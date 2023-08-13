@@ -1,8 +1,8 @@
 import styles from '../styles/Card.module.scss'
 
-export default function Card(){
+export default function Card({gridArea}){
   return(
-    <div>
+    <div style={{gridArea:`${gridArea}`}}>
 
     </div>
   )

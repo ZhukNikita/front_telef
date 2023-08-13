@@ -1,0 +1,21 @@
+.footer{
+  width: 100%;
+  background-color: rgba(43, 44, 64, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+    h6{
+      color: #8592a3;
+
+    }
+  }
+}
