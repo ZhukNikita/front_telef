@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import NavBar from "./components/NavBar";
+import SideMenuHorizontal from "./components/SideMenuHorizontal";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{backgroundColor:"rgba(43, 44, 64, 0.96)" , width:'100%' , display:'flex' , justifyContent:'center' , boxShadow: '0 0.125rem 0.375rem rgba(0, 0, 0, 0.25)'}}>
+        <NavBar/>
+      </div>
+      {/*<hr/>*/}
+      {/*<SideMenuHorizontal/>*/}
     </div>
   );
 }

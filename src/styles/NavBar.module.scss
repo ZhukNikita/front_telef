@@ -1,0 +1,55 @@
+.navbar{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+  color: white;
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    gap: 10px;
+    h3{
+      color: #cbcbe2;
+      font-size: 28px;
+
+      font-weight: 900 !important;
+    }
+  }
+  .leftsidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .translate{
+      width: 26px;
+      height: 26px;
+      padding: 0;
+      margin: 0;
+      border-radius: 13px;
+    }
+    .contactUs{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      border: none;
+      color: #8592a3;
+      background-color: #393c50;
+      font-family: 'Public Sans', sans-serif;
+      border-radius: 19px;
+      width: 141px;
+      height: 39px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      svg{
+       fill:  #8592a3;
+
+      }
+    }
+  }
+
+}
