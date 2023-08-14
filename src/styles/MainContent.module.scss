@@ -9,7 +9,7 @@
   flex-direction: column;
   gap: 20px;
   .contentCards{
-    width: 80%;
+    width: 60%;
     height: calc(65vh - 162px);
     @include flex(start , center);
     gap: 20px
