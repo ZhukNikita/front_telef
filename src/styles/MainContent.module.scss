@@ -22,7 +22,7 @@
       h3{
         margin: 0 auto;
         margin-top: 10px;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: white;
       }
     }
@@ -44,28 +44,35 @@
     }
     h4{
       font-size: 1.2rem;
-      margin-top: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
     }
     p{
       width: 50%;
       margin: 0 auto;
       margin-bottom: 10px;
+      font-size: 1.1rem;
+
     }
     .features{
       @include flex(start , center);
-      gap: 50px;
+      gap: 70px;
       width: 100%;
       margin-bottom: 30px;
       color: #fff;
       .feature{
+      margin-top: 40px;
+
         @include flex(center , center);
         flex-direction: column;
+        gap:10px;
         svg{
           fill: aquamarine;
         }
         p{
-          width: 140px;
-          font-size: 14px;
+          width: 240px;
+          font-size: 1.1rem;
         }
       }
     }
@@ -78,7 +85,7 @@
     @include flex(center,center);
     .content{
       text-align: center;
-      color: $textColor;
+      color: #fff;
       width: 60%;
       h3{
         margin-top: 0;
@@ -87,7 +94,10 @@
       }
       h5{
         margin-top: 10px;
-        font-size: 1rem;
+        font-size: 1.3rem;
+      }
+      p{
+        font-size: 1.1rem;
       }
     }
   }
@@ -118,7 +128,6 @@
       }
       p{
         color:  #fff;
-
         width: 130px;
       }
       svg{
@@ -138,17 +147,47 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.125rem 0.375rem;
     text-align: center;
     h3{
-      color:  $textColor;
+      color:  #fff;
       font-size: 32px;
       margin-bottom: 10px;
     }
     p{
-      color:  $textColor;
+      color:  #fff;
       font-size: 18px;
 
     }
     a{
       color: aquamarine
+    }
+  }
+}
+@media(max-width:'900px') {
+  .mainContent{
+    .chips{
+      p{
+        width: 70%;
+      }
+      .features{
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+    .aboutUs{
+      flex-direction: column;
+      .aboutblock{
+        width: 100%;
+        h3{
+          width: 100%;
+        }
+      }
+    }
+    .contactUs{
+      width: 80%;
+      height: 100%;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

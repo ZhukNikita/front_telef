@@ -1,26 +1,9 @@
 import styles from '../styles/MainContent.module.scss'
 import Card from "./Сard";
 import img from '../img/img1.png'
-import {motion} from 'framer-motion'
+import {cubicBezier, easeIn, easeInOut, motion} from 'framer-motion'
 export default function MainContent() {
-  const cards = [{
-    heigth:'400px',
-    width:'38%',
-    id: Date.now(),
-    img: img,
-    h3: 'Connect your SIP PBX',
-    h4:`Send and receive calls in minutes`,
-    p:'We operate our own Autonomous System and buy IP transit directly from Tier 1 carriers. '
-  },
-  {
-    heigth:'170px',
-    width: '52%',
-    id: Date.now(),
-    h3: 'SIP termination',
-    h4: 'High—quality ISDN-grade voice',
-    text: 'Beat latency by connecting to local VoIP gateways in 12 countries. Each PoP is directly connected to multiple voice carriers. We operate our own network and hardware-based switches.'
-  }
-]
+
   return(
     <div className={styles.mainContent}>
       <div className={styles.header}>
@@ -28,30 +11,26 @@ export default function MainContent() {
             <h3>Connect your SIP PBX <br/> send and receive calls in minutes</h3>
           </div>
       </div>
-        {/* <div className={styles.contentCards}>
-          {
-            cards.map(el=>
-                <Card key={el.id} color={el.color} height={el.heigth} width={el.width} text={el.text} h3={el.h3} h4={el.h4} img={el.img}/>
-            )
-          }
-        </div> */}
         <motion.div className={styles.chips}
             initial={{opacity: 0 , y: 0}}
             animate={{opacity:1 , y: 0}}
-            transition={{duration: 0.7}}
+            transition={{
+              duration: 1.3,
+              ease: 'easeInOut'
+            }}
         >
             <h3>SIP termination</h3>
             <h4>High—quality ISDN-grade voice</h4>
             <p>Beat latency by connecting to local VoIP gateways in 12 countries. Each PoP is directly connected to multiple voice carriers. We operate our own network and hardware-based switches.</p>
             <div className={styles.features}>
                 <div className={styles.feature}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                   <path d="M20 3H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 5h-2V6h2zm4 0h-2V6h2zm1 5H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2zm-5 5h-2v-2h2zm4 0h-2v-2h2z"></path>
                 </svg>
                   <p>We operate our own Autonomous System and buy IP transit directly from Tier 1 carriers. Diamond Call owns the hardware in each PoP.</p>
                 </div>
                 <div className={styles.feature}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                   <path d="M17 7c-2.094 0-3.611 1.567-5.001 3.346C10.609 8.567 9.093 7 7 7c-2.757 0-5 2.243-5 5a4.98 4.98 0 0 0 1.459 3.534A4.956 4.956 0 0 0 6.99 17h.012c2.089-.005 3.605-1.572 4.996-3.351C13.389 15.431 14.906 17 17 17c2.757 0 5-2.243 5-5s-2.243-5-5-5zM6.998 15l-.008 1v-1c-.799 0-1.55-.312-2.114-.878A3.004 3.004 0 0 1 7 9c1.33 0 2.56 1.438 3.746 2.998C9.558 13.557 8.328 14.997 6.998 15zM17 15c-1.33 0-2.561-1.44-3.749-3.002C14.438 10.438 15.668 9 17 9c1.654 0 3 1.346 3 3s-1.346 3-3 3z"></path>
                 </svg>
                   <p>SIP termination is homed to local carriers. RTP streams over lowest latency, domestic IP links without looping through aggregation sites.</p>
@@ -79,13 +58,7 @@ export default function MainContent() {
 By using our solutions, you can gain better control over call path and visibly improve Quality of Experience (QoE) for your end users.</p>
           </div>
         </div>
-        {/* <motion.div className={styles.interface} initial={{opacity:0 , y: 100}} animate={{opacity:1 , y:0}} transition={{duration: 0.7}}>
-           <h2>Advanced yet simple interface</h2>
-           <p>Everything you need is in our self-service portal</p>
-        </motion.div> */}
-        <div className={styles.iterfaceImg}>
 
-        </div>
         <div className={styles.aboutUs}>
             <div className={styles.aboutblock}>
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
@@ -115,7 +88,7 @@ By using our solutions, you can gain better control over call path and visibly i
                     animate={{opacity:1 , y: 0}}
                     transition={{duration: 0.7}}
                     >
-          <h3>Contact Us</h3>
+          <h3>Contact us</h3>
           <p>Diamond Call maintains 3 NOCs and supports customers across the globe in all time zones, 24/7.</p>
           <a href="mailto:email@diamondcall.com">email@diamondcall.com</a>
         </motion.div>
