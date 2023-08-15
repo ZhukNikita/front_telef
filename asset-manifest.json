@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/front_telef/static/css/main.dac2f5d1.css",
-    "main.js": "/front_telef/static/js/main.99999e08.js",
+    "main.css": "/front_telef/static/css/main.8dd15a1b.css",
+    "main.js": "/front_telef/static/js/main.53ae6a89.js",
     "static/media/office.jpg": "/front_telef/static/media/office.3d96f1b8af4b9129ba58.jpg",
     "static/media/en.png": "/front_telef/static/media/en.c411b87179caccac5954.png",
     "static/media/img1.png": "/front_telef/static/media/img1.4d1a0d49860ffe6ed2aa.png",
     "index.html": "/front_telef/index.html",
-    "main.dac2f5d1.css.map": "/front_telef/static/css/main.dac2f5d1.css.map",
-    "main.99999e08.js.map": "/front_telef/static/js/main.99999e08.js.map"
+    "main.8dd15a1b.css.map": "/front_telef/static/css/main.8dd15a1b.css.map",
+    "main.53ae6a89.js.map": "/front_telef/static/js/main.53ae6a89.js.map"
   },
   "entrypoints": [
-    "static/css/main.dac2f5d1.css",
-    "static/js/main.99999e08.js"
+    "static/css/main.8dd15a1b.css",
+    "static/js/main.53ae6a89.js"
   ]
 }
