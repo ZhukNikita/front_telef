@@ -68,7 +68,7 @@
         flex-direction: column;
         gap:10px;
         svg{
-          fill: aquamarine;
+          fill: #65e4f0;
         }
         p{
           width: 240px;
@@ -101,25 +101,18 @@
       }
     }
   }
-  .interface{
-    text-align: center;
-    color: $textColor;
-    h2{
-      font-size: 30px;
-    }
-  }
   .aboutUs{
     width: 60%;
     @include flex(center , space-between);
     gap: 40px;
     .aboutblock{
-      height: 320px;
+      height: 260px;
       text-align: center;
       @include flex(center ,start);
       width: 40%;
       gap: 10px;
       flex-direction: column;
-      padding: 20px 0 20px 0;
+      padding: 20px 0 0 0;
       h3{
         margin-top: 5px;
         color: #fff;
@@ -133,7 +126,57 @@
       svg{
         width: 60px;
         height: 60px;
-        fill:  aquamarine;
+        fill:  #65e4f0;
+      }
+    }
+  }
+  .localNumbers{
+    width: 100%;
+    margin-bottom: 20px;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/map.jpg");
+    background-size: cover;
+    padding: 32px 0 32px 0;
+    .content{
+      margin: 0 auto;
+      @include flex(center, center);
+      flex-direction: column;
+      width: 60%;
+      text-align: center;
+      color: #fff;
+      .features{
+        width: 100%;
+        @include flex (center,center);
+        gap:20px;
+        .feature{
+          margin-top: 0;
+          width: 40%;
+          @include flex(center,start);
+          gap: 10px;
+          text-align: justify;
+          svg{
+            width: 60px;
+            height: 60px;
+            fill: #65e4f0;
+          }
+          p{
+            width: 90%;
+            margin-top: 0;
+            margin-bottom: 0;
+            word-wrap: break-word;
+            margin-bottom: 17.6px;
+
+          }
+        }
+      }
+      h3{
+        font-size: 2rem;
+        color:#fff;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      p{
+        font-size: 1.1rem;
+        margin-bottom: 17.6px;
       }
     }
   }
@@ -156,7 +199,7 @@
 
     }
     a{
-      color: aquamarine
+      color: #65e4f0
     }
   }
 }
@@ -183,6 +226,16 @@
         width: 100%;
         h3{
           width: 100%;
+        }
+      }
+    }
+    .localNumbers{
+      .content{
+        .features{
+          @include flex(start,center);
+          .feature{
+            flex-direction: column;
+          }
         }
       }
     }
@@ -219,8 +272,16 @@
           height: 100%;
         }
     }
-    .contactUs{
-
+    .localNumbers{
+      .content{
+        .features{
+          @include flex(center,center);
+          flex-direction: column;
+          .feature{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
