@@ -50,38 +50,69 @@ export default function MainContent() {
             </div>
         </motion.div>
         <div className={styles.quality}>
-          <div className={styles.content}>
+          <motion.div className={styles.content}
+                      initial={{opacity: 0 , y: 0}}
+                      animate={{opacity:1 , y: 0}}
+                              transition={{
+                                duration: 1.3,
+                                ease: 'easeInOut',
+                                delay: 0.4,
+                              }}>
             <h3>Quality of Experience</h3>
             <h5>Quickly deploy numbers. We deliver the Quality of Experience your users demand.</h5>
             <p>Diamond Call helps contact centers, IT companies and OTT providers expand their international capabilities. Our Exchange platform connects Tier 1s and incumbent telcos in multiple jurisdictions.</p>
             <p>We are not a reseller and numbers are delivered over existing IP and SS7 links to our member carriers.
-By using our solutions, you can gain better control over call path and visibly improve Quality of Experience (QoE) for your end users.</p>
-          </div>
+                By using our solutions, you can gain better control over call path and visibly improve Quality of Experience (QoE) for your end users.</p>
+          </motion.div>
         </div>
 
         <div className={styles.aboutUs}>
-            <div className={styles.aboutblock}>
+            <motion.div className={styles.aboutblock}
+              initial={{opacity: 0 , y: 0}}
+              animate={{opacity:1 , y: 0}}
+                transition={{
+                  duration: 1.3,
+                  ease: 'easeInOut',
+                  delay: 0.2,
+                }}
+            >
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
               <path d="M13 3h4v2h-4zM3 8h4v2H3zm0 8h4v2H3zm-1-4h3.99v2H2zm19.707-5.293-1.414-1.414L18.586 7A6.937 6.937 0 0 0 15 6c-3.859 0-7 3.141-7 7s3.141 7 7 7 7-3.141 7-7a6.968 6.968 0 0 0-1.855-4.73l1.562-1.563zM16 14h-2V8.958h2V14z"></path>
             </svg>
                 <h3>Perfomance</h3>
                 <p>Total latency on a call beats competitor solutions.</p>
-            </div>
-            <div className={styles.aboutblock}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
-              <path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
-            </svg>
+            </motion.div>
+            <motion.div className={styles.aboutblock}
+              initial={{opacity: 0 , y: 0}}
+              animate={{opacity:1 , y: 0}}
+                transition={{
+                  duration: 1.3,
+                  ease: 'easeInOut',
+                  delay: 0.4,
+                }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                <path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+              </svg>
                 <h3>Visibility</h3>
                 <p>Inbound SIP and RTP traffic streams from local IXPs.</p>
-            </div>
-            <div className={styles.aboutblock}>
+            </motion.div>
+            <motion.div className={styles.aboutblock}
+              initial={{opacity: 0 , y: 0}}
+              animate={{opacity:1 , y: 0}}
+                transition={{
+                  duration: 1.3,
+                  ease: 'easeInOut',
+                  delay: 0.6,
+                }}
+            >
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
               <path d="M12 5C7.031 5 2 6.546 2 9.5S7.031 14 12 14c4.97 0 10-1.546 10-4.5S16.97 5 12 5zm-5 9.938v3c1.237.299 2.605.482 4 .541v-3a21.166 21.166 0 0 1-4-.541zm6 .54v3a20.994 20.994 0 0 0 4-.541v-3a20.994 20.994 0 0 1-4 .541zm6-1.181v3c1.801-.755 3-1.857 3-3.297v-3c0 1.44-1.199 2.542-3 3.297zm-14 3v-3C3.2 13.542 2 12.439 2 11v3c0 1.439 1.2 2.542 3 3.297z">
               </path>
               </svg>
                 <h3>Lower total cost</h3>
                 <p>In many markets, wholesale Diamond Call pricing is available on a block.</p>
-            </div>
+            </motion.div>
         </div>
         <motion.div className={styles.contactUs}
                     initial={{opacity: 0 , y: 50}}
