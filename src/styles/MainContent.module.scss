@@ -8,6 +8,25 @@
   @include flex(center,start);
   flex-direction: column;
   gap: 20px;
+  .header{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    @include flex(center,center);
+    .content{
+      width: 60%;
+      text-align: center;
+      h3{
+        margin: 0 auto;
+        margin-top: 10px;
+        font-size: 2rem;
+        color: white;
+      }
+    }
+  }
   .contentCards{
     width: 60%;
     height: calc(65vh - 162px);
@@ -16,32 +35,61 @@
   }
   .chips{
     width: 60%;
-    background-color: $cardBgC;
-    min-height: 300px;
-    border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.125rem 0.375rem;
+
     text-align: center;
-    color: $textColor;
+    color: #fff;
     h3{
-      font-size: 30px;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    h4{
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    p{
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 10px;
     }
     .features{
       @include flex(start , center);
       gap: 50px;
       width: 100%;
       margin-bottom: 30px;
+      color: #fff;
       .feature{
         @include flex(center , center);
         flex-direction: column;
         svg{
-          fill: $textColor;
+          fill: aquamarine;
         }
         p{
           width: 140px;
           font-size: 14px;
         }
       }
+    }
   }
+  .quality{
+    margin-top: 10px;
+    width: 100%;
+    background-color: $cardBgC;
+    min-height: 340px;
+    @include flex(center,center);
+    .content{
+      text-align: center;
+      color: $textColor;
+      width: 60%;
+      h3{
+        margin-top: 0;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      h5{
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+    }
   }
   .interface{
     text-align: center;
@@ -51,32 +99,32 @@
     }
   }
   .aboutUs{
-    width: 60%;
+    width: 50%;
     @include flex(center , space-between);
     gap: 40px;
     .aboutblock{
-      height: 240px;
+      height: 260px;
       text-align: center;
       @include flex(center ,start);
       width: 23%;
-      background-color: $cardBgC;
-      border-radius: 0.5rem;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.125rem 0.375rem;
+      gap: 10px;
       flex-direction: column;
       padding: 20px 0 20px 0;
       h3{
         margin-top: 5px;
-        color: $textColor;
+        color: #fff;
         font-size:26px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
       }
       p{
-        color:  $textColor;
+        color:  #fff;
 
         width: 130px;
       }
       svg{
-        fill:  $textColor;
+        width: 60px;
+        height: 60px;
+        fill:  aquamarine;
       }
     }
   }
@@ -100,7 +148,7 @@
 
     }
     a{
-      color: #0081bd
+      color: aquamarine
     }
   }
 }

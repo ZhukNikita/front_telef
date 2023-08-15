@@ -23,19 +23,26 @@ export default function MainContent() {
 ]
   return(
     <div className={styles.mainContent}>
-        <div className={styles.contentCards}>
+      <div className={styles.header}>
+          <div className={styles.content}>
+            <h3>Connect your SIP PBX <br/> send and receive calls in minutes</h3>
+          </div>
+      </div>
+        {/* <div className={styles.contentCards}>
           {
             cards.map(el=>
                 <Card key={el.id} color={el.color} height={el.heigth} width={el.width} text={el.text} h3={el.h3} h4={el.h4} img={el.img}/>
             )
           }
-        </div>
+        </div> */}
         <motion.div className={styles.chips}
-            initial={{opacity: 0 , y: 50}}
+            initial={{opacity: 0 , y: 0}}
             animate={{opacity:1 , y: 0}}
             transition={{duration: 0.7}}
         >
-            <h3>Diamond Call portal tour</h3>
+            <h3>SIP termination</h3>
+            <h4>High—quality ISDN-grade voice</h4>
+            <p>Beat latency by connecting to local VoIP gateways in 12 countries. Each PoP is directly connected to multiple voice carriers. We operate our own network and hardware-based switches.</p>
             <div className={styles.features}>
                 <div className={styles.feature}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
@@ -49,7 +56,7 @@ export default function MainContent() {
                 </svg>
                   <p>SIP termination is homed to local carriers. RTP streams over lowest latency, domestic IP links without looping through aggregation sites.</p>
                 </div>
-                <div className={styles.feature}>
+                {/* <div className={styles.feature}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                   <path d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"></path>
                 </svg>
@@ -60,9 +67,18 @@ export default function MainContent() {
                   <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path>
                 </svg>
                   <p>Diamond Call is a member of multiple IXes worldwide with access to hundreds of networks through meet-me rooms and cross-connects.</p>
-                </div>
+                </div> */}
             </div>
         </motion.div>
+        <div className={styles.quality}>
+          <div className={styles.content}>
+            <h3>Quality of Experience</h3>
+            <h5>Quickly deploy numbers. We deliver the Quality of Experience your users demand.</h5>
+            <p>Diamond Call helps contact centers, IT companies and OTT providers expand their international capabilities. Our Exchange platform connects Tier 1s and incumbent telcos in multiple jurisdictions.</p>
+            <p>We are not a reseller and numbers are delivered over existing IP and SS7 links to our member carriers.
+By using our solutions, you can gain better control over call path and visibly improve Quality of Experience (QoE) for your end users.</p>
+          </div>
+        </div>
         {/* <motion.div className={styles.interface} initial={{opacity:0 , y: 100}} animate={{opacity:1 , y:0}} transition={{duration: 0.7}}>
            <h2>Advanced yet simple interface</h2>
            <p>Everything you need is in our self-service portal</p>
@@ -86,8 +102,9 @@ export default function MainContent() {
                 <p>Inbound SIP and RTP traffic streams from local IXPs.</p>
             </div>
             <div className={styles.aboutblock}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
-              <path d="M16.445 3h-8.89c-.345 0-.666.178-.849.47L3.25 9h17.5l-3.456-5.53a1.003 1.003 0 0 0-.849-.47zM11.26 21.186a1 1 0 0 0 1.48 0L22 11H2l9.26 10.186z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
+              <path d="M12 5C7.031 5 2 6.546 2 9.5S7.031 14 12 14c4.97 0 10-1.546 10-4.5S16.97 5 12 5zm-5 9.938v3c1.237.299 2.605.482 4 .541v-3a21.166 21.166 0 0 1-4-.541zm6 .54v3a20.994 20.994 0 0 0 4-.541v-3a20.994 20.994 0 0 1-4 .541zm6-1.181v3c1.801-.755 3-1.857 3-3.297v-3c0 1.44-1.199 2.542-3 3.297zm-14 3v-3C3.2 13.542 2 12.439 2 11v3c0 1.439 1.2 2.542 3 3.297z">
+              </path>
               </svg>
                 <h3>Lower total cost</h3>
                 <p>In many markets, wholesale Diamond Call pricing is available on a block.</p>
