@@ -1,7 +1,5 @@
 import styles from '../styles/MainContent.module.scss'
-import Card from "./Сard";
-import img from '../img/img1.png'
-import {animate, cubicBezier, delay, easeIn, easeInOut, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 export default function MainContent() {
   const liVariants = {
     initial: {opacity : 0},
@@ -42,7 +40,6 @@ export default function MainContent() {
                 </svg>
                   <p>SIP termination is homed to local carriers. RTP streams over lowest latency, domestic IP links without looping through aggregation sites.</p>
                 </div>
-
             </div>
         </motion.div>
         <div className={styles.quality}>
@@ -100,6 +97,18 @@ export default function MainContent() {
                 <h3>Price</h3>
                 <p>In many markets, wholesale Diamond Call pricing is available on a block.</p>
             </motion.div>
+            <motion.div className={styles.aboutblock}
+              initial={'initial'}
+              whileInView={'animate'}
+              transition={{duration:1 , delay: 0.8}}
+              variants={liVariants}
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                  <path d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"></path>
+                </svg>
+                <h3>Quality of Experience</h3>
+                <p>Happy callcenter agents and happy customers increase sales.</p>
+            </motion.div>
         </div>
         <div className={styles.localNumbers}>
           <div className={styles.content}>
@@ -121,6 +130,7 @@ export default function MainContent() {
                 </svg>
                   <p>Diamond Call is a member of multiple IXes worldwide with access to hundreds of networks through meet-me rooms and cross-connects.</p>
               </motion.div>
+              
             </div>
           </div>
         </div>
