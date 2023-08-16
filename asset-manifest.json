@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/front_telef/static/css/main.fcf4afb2.css",
-    "main.js": "/front_telef/static/js/main.8674b003.js",
+    "main.js": "/front_telef/static/js/main.d7d7fbde.js",
     "static/media/office.jpg": "/front_telef/static/media/office.3d96f1b8af4b9129ba58.jpg",
     "static/media/map.jpg": "/front_telef/static/media/map.aba76cd8624d60da0cda.jpg",
     "index.html": "/front_telef/index.html",
     "main.fcf4afb2.css.map": "/front_telef/static/css/main.fcf4afb2.css.map",
-    "main.8674b003.js.map": "/front_telef/static/js/main.8674b003.js.map"
+    "main.d7d7fbde.js.map": "/front_telef/static/js/main.d7d7fbde.js.map"
   },
   "entrypoints": [
     "static/css/main.fcf4afb2.css",
-    "static/js/main.8674b003.js"
+    "static/js/main.d7d7fbde.js"
   ]
 }
