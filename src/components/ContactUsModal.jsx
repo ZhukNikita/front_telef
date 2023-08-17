@@ -67,7 +67,7 @@ export default function ContactUsModal({setIsOpen}) {
     }
     async function SendMessage(){
         try{
-            const result = await axios.post('http://localhost:5000/api/contact' , {name , message , email});
+            const result = await axios.post('https://back-telef.vercel.app/api/contact' , {name , message , email});
             setIsOpen(false)
             return result
         }

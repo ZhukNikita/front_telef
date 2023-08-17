@@ -1,3 +1,4 @@
+@import "vars";
 .navbar{
   width: 80%;
   display: flex;
@@ -17,7 +18,8 @@
       font-weight: 900 !important;
     }
   }
-  .leftsidebar{
+  .rightsidebar{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +30,29 @@
       padding: 0;
       margin: 0;
       border-radius: 13px;
+      cursor: pointer;
+    }
+    .langList{
+      padding: 0;
+
+      padding: 7px 12px;
+      position: absolute;
+      top: 34px;
+      left: -12px;
+      right: 0;
+      z-index: 3;
+      background-color: rgba(43, 44, 64, 0.96);
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      width: 30px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.125rem 0.375rem;
+      @include flex(center,center);
+      flex-direction: column;
+      gap: 5px;
+      li{
+        list-style: none;
+        cursor: pointer;
+      }
     }
     .contactUs{
       display: flex;
@@ -52,9 +77,9 @@
   }
 }
 
-@media (max-width:'650px') {
+@media(max-width:'650px') {
   .navbar{
-    .leftsidebar{
+    .rightsidebar{
       .contactUs{
         width: 50px;
         padding: 0;
@@ -66,8 +91,13 @@
     }
   }
 }
-@media (max-width:'450px') {
+@media(max-width:'450px') {
   .navbar{
     width: 95%;
+    .logo{
+      h3{
+        font-size: 1.4rem;
+      }
+    }
   }
 }
